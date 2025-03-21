@@ -9,7 +9,7 @@ st.write("Current Working Directory:", os.getcwd())
 st.write("Files in current directory:", os.listdir("."))
 st.write("Files in 'data' directory:", os.listdir("data") if os.path.exists("data") else "No 'data' directory found")
 
-data_dir = os.path.join(os.getcwd(), "data")
+data_dir = os.path.join(os.getcwd(), "demo_app", "data")
 image_path = os.path.join(data_dir, "EVdrGOqU0AUJ5HW.jpg")
 st.write(image_path)
 
