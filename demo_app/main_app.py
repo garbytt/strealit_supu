@@ -15,5 +15,8 @@ st.write(image_path)
 
 st.title("demo app")
 st.caption("this is a demo app")
-image = Image.open("./data/EVdrGOqU0AUJ5HW.jpg")
-st.image(image, caption="this is a image", width=200)
+if os.path.exists(image_path):
+    image = Image.open(image_path)
+    st.image(image, caption="this is a image", width=200)
+else:
+    st.error(f"Image file not found: {image_path}")
